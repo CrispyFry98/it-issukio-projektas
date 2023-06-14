@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body {
+  margin-top: 67px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  font-family: Lato, arial;
+  margin-top: 67px;
+
+  overflow-x: hidden;
+}
+
+
+/*  Mobilaus telefono ekrano užklausos  */
+@media(max-width: 768px) {
+  .left-section {
+    display: none;
+  }
+
+  .right-section {
+    display: none;
+  }
+
+  .first-section {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .hamburger-menu {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .footer {
+    height: 450px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .footer-right-section {
+    border-left: none;
+    border-top: solid 1px rgb(180, 180, 180);
+    padding-top: 40px;
+  }
+
+  .about {
+    width: 240px;
+  }
+
+  .about-upper-heading {
+    font-size: 22px;
+    height: 54px;
+  }
+
+  .about-left-section {
+    display: none;
+  }
+
+  .about-right-section {
+    font-size: 16px;
+  }
+
+  .main-title-wrapper {
+    width: 240px;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-title-img1 {
+    width: 220px;
+  }
+
+  .left-section1 {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .right-section1 {
+    font-size: 22px;
+  }
+
+  .about-info-header {
+    font-size: 22px;
+    height: 50px;
+  }
+
+  .about-info-info {
+    font-size: 16px;
+    border-bottom: solid 1px rgb(220, 220, 220);
+  }
+
+  /* paveiksliukus paslėpti ar palikti? */
+  
+  .about-layer {
+    flex-direction: column;
+  }
+
+  .about-img-img {
+    width: 150px;
+  }
+
+  .duk-accordion-container {
+    width: 240px;
+    overflow: hidden;
+  }
+
+  .duk-accordion-heading {
+    font-size: 22px;
+    height: 55px;
+  }
+
+  .accordion__label {
+    font-size: 16px;
+  }
+
+  .accordion__content {
+    font-size: 15px;
+  }
+
+  .kontaktai-content-wrapper {
+    width: 240px;
+  }
+
+  .kontaktai-content-box {
+    width: 190px;
+  }
+
+  .kontaktai-upper-section {
+    flex-direction: column;
+  }
+
+  .kontaktai-header-header {
+    font-size: 22px;
+    height: 50px;
+  }
+
+  .kontaktai-noncoloured-text {
+    font-size: 22px;
+  }
+
+  .kontaktai-coloured-text {
+    font-size: 22px;
+  }
+
+  .kontaktai-bottom-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kontaktai-right-section {
+    padding-left: 4px;
+    padding-right: 4px;
+
+    width: 220px;
+  }
+
+  .right-section-field {
+    width: 200px;
+  }
+
+  .right-section-input {
+    width: 194px;
+  }
+
+  .right-section-input-message {
+    max-width: 194px;
+    min-width: 194px;
+  }
+
+  .send-message-btn {
+    width: 218px;
+    font-size: 15px;
+  }
+
+  .kontaktai-content-box-title {
+    font-size: 16px;
+  }
+
+  .kontaktai-content-box-description p {
+    font-size: 15px;
+  }
+
+  .kontaktai-content-box-btn {
+    font-size: 15px;
+  }
+
+  .main-title-wrapper {
+    margin-top: 20px;
+    margin-bottom: 140px;
+  }
+
+  .about {
+    margin-bottom: 140px;
+  }
+
+  .duk-accordion-container {
+    margin-bottom: 140px;
+  }
+
+  .about-img-container1,
+  .about-img-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .about-info-header {
+    border-top: solid 1px rgb(220, 220, 220);
+  }
+
+  .kontaktai-info-info-container {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .kontaktai-left-section {
+    padding: 0;
+  }
+
+  .kontaktai-icon-icon {
+    transform: scale(1.2);
+  }
+
+  .kontaktai-description-description {
+    font-size: 13px;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .kontaktai-icon-container {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  /* footer styles  */
+
+  .footer-left-section {
+    transform: scale(0.8);
+  }
+
+  .footer-right-section {
+    transform: scale(0.75);
+  }
+}
+
+
+/*  Planšetinio ekrano užklausos  */
+@media(min-width: 768px) and (max-width: 1080px) {
+  .right-section {
+    display: none;
+  }
+
+  .hamburger-menu {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .about {
+    width: 680px;
+  }
+
+  .about-upper-heading {
+    font-size: 32px;
+    height: 56px;
+  }
+
+  .about-info-header {
+    height: 110px;
+    font-size: 27px;
+  }
+
+  .about-info-info {
+    font-size: 22px;
+  }
+
+  .main-title-wrapper {
+    width: 540px;
+    justify-content: center;
+  }
+
+  .main-title-img1 {
+    width: 210px;
+  }
+
+  .left-section1 {
+    margin-right: 102px;
+  }
+
+  .right-section1 {
+    font-size: 32px;
+  }
+
+  .duk-accordion-container {
+    width: 680px;
+  }
+
+  .duk-accordion-heading {
+    font-size: 32px;
+    height: 56px;
+  }
+
+  .accordion__label {
+    font-size: 26px;
+  }
+
+  .accordion__content p {
+    font-size: 22px;
+  }
+
+  /*  kontaktai section  */
+
+  .kontaktai-content-wrapper {
+    width: 680px;
+  }
+
+  .kontaktai-upper-section {
+    flex-direction: column;
+  }
+
+  .kontaktai-bottom-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kontaktai-header-header {
+    font-size: 32px;
+    height: 56px;
+  }
+
+  .footer {
+    justify-content: space-around;
+  }
+
+  .footer-left-section {
+    transform: scale(1.1);
+  }
+
+  .footer-right-section {
+    transform: scale(1.1);
+  }
+
+  .kontaktai-content-box {
+    height: 380px;
+  }
+
+  .kontaktai-content-box-img {
+    width: 140px;
+  }
+
+  .kontaktai-content-box-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .kontaktai-content-box-description p {
+    font-size: 22px;
+  }
+
+  .kontaktai-content-box-btn {
+    font-size: 22px;
+    width: 210px;
+  }
+
+  .kontaktai-info-info-container {
+    font-size: 22px;
+  }
+
+  .kontaktai-icon-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 32px;
+  }
+
+  .kontaktai-right-section {
+    width: 420px;
+  }
+
+  .right-section-field {
+    width: 393px;
+  }
+
+  .right-section-p {
+    font-size: 22px;
+  }
+
+  .right-section-input {
+    font-size: 21px;
+    height: 40px;
+    width: 393px;
+  }
+
+  .right-section-input-message {
+    font-size: 21px;
+    max-width: 393px;
+    min-width: 393px;
+  }
+
+  .send-message-btn {
+    width: 417px;
+    font-size: 22px;
+  }
+
+  .right-section-input::placeholder {
+    font-size: 19px;
+  }
+
+  .right-section-input-message::placeholder {
+    font-size: 19px;
+  }
+}

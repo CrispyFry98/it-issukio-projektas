@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mano Ateitis su Technologijomis</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/body.css">
+  <script defer src="script.js"></script>
+</head>
+<!--Manto Rapševičiaus projektas-->
+<body>
+  <header class="header">
+
+    <div class="left-section">
+      <div class="pagrindinis" onclick="scrollToPagrindinis()">Pagrindinis</div>
+    </div>
+    <div class="right-section">
+      <div class="apie" onclick="scrollToApie()">
+        Apie
+      </div>
+      <div class="duk" onclick="scrollToDuk()">
+        DUK
+      </div>
+      <div class="kontaktai" onclick="scrollToKontaktai()">
+        Kontaktai
+      </div>
+    </div>
+
+  </header>
+
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="menu-line"></div>
+  </div>
+
+  <nav class="navbar">
+    <div class="first-section">
+      <div class="first-section-btn" onclick="scrollToPagrindinis()">
+        Pagrindinis
+      </div>
+    </div>
+    <div class="second-section">
+      <div class="second-section-btn1" onclick="scrollToApie()">
+        Apie
+      </div>
+      <div class="second-section-btn2" onclick="scrollToDuk()">
+        DUK
+      </div>
+      <div class="second-section-btn3" onclick="scrollToKontaktai()">
+        Kontaktai
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="main-title-wrapper hidden">
+      <div class="left-section1 ">
+        <img class="main-title-img1 hidden" src="images/main-title-img.svg" alt="">
+      </div>
+      <div class="right-section1 logos">
+        <div class="word1 hidden logo">MANO</div>
+        <div class="word2 hidden logo">ATEITIS</div>
+        <div class="word3 hidden logo">SU TECHNOLOGIJOMIS</div>
+      </div> 
+    </div>
+  
+    <div class="about">
+      <div class="about-upper-heading">
+        <div class="hiddenRight">
+          Apie
+        </div>
+      </div>
+      <div class="about-bottom-section-wrapper">
+        <div class="about-layer">
+          <div class="about-img-container1 hiddenRight">
+            <img class="about-img-img" src="images/layer1-img.svg" alt="">
+          </div>
+          <div class="about-info-container">
+            <div class="about-info-header hiddenRight">
+              Susidomėjimas kompiuteriais
+            </div>
+            <div class="about-info-info hiddenRight">
+              Mano kelionė prasidėjo nuo ankstyvo susidomėjimo kompiuteriais. Jau nuo mažens žaisti kompiuteriu man buvo ne tik pramoga, bet ir iššūkis. Tada mano noras išmokti ir suprasti, kaip veikia šie įrenginiai, tik dar labiau sustiprėjo.
+            </div>
+          </div>
+        </div>
+        <div class="about-layer">
+          <div class="about-info-container">
+            <div class="about-info-header hidden">
+              Troškimas
+            </div>
+            <div class="about-info-info hidden">
+              Noriu išbandyti naujausias inovacijas su šiais įrankiais, kad galėčiau prisidėti prie būsimos technologinės revoliucijos. Noriu būti dalimi tos puikios ateities, kurioje technologijos padeda mums visapusiškai įgyvendinti savo potencialą ir paversti pasaulį geresne vieta.
+            </div>
+          </div>
+          <div class="about-img-container2 hidden">
+            <img class="about-img-img" src="images/layer2-img.svg" alt="">
+          </div>
+        </div>
+        <div class="about-layer">
+          <div class="about-img-container1 hiddenRight">
+            <img class="about-img-img" src="images/layer3-img.svg" alt="">
+          </div>
+          <div class="about-info-container">
+            <div class="about-info-header hiddenRight">
+              Ateities tikslai
+            </div>
+            <div class="about-info-info hiddenRight">
+              Manosios ateities su technologijomis tikslas nėra vien tik naujovių kūrimas. Taip pat noriu padėti žmonėms suprasti ir įsisavinti šias technologijas. Daugeliui žmonių jos gali atrodyti sudėtingos, todėl mano misija bus skatinti technologinį raštingumą ir padėti visiems jaustis patogiai naudojantis šiomis priemonėmis.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="duk-accordion-container">
+      <div class="duk-accordion-heading hidden">DUK</div>
+      <div>
+        <input type="radio" name="duk_accordion" id="section1" class="accordion__input">
+        <label for="section1" class="accordion__label">1. Kokie yra tavo ilgalaikiai karjeros tikslai, susiję su technologijomis?</label>
+        <div class="accordion__content">
+          <p>
+            Mano ilgalaikis karjeros tikslas susijęs su technologijomis yra tapti aukštos kvalifikacijos IT specialistu ir įgyvendinti inovatyvius projektus, kurie pakeistų pasaulį.
+          </p>
+        </div>
+      </div>
+      <div>
+        <input type="radio" name="duk_accordion" id="section2" class="accordion__input">
+        <label for="section2" class="accordion__label">2. Kokiais būdais planuoji prisidėti prie technologinės revoliucijos?</label>
+        <div class="accordion__content">
+          <p>
+            Planuoju prisidėti prie technologinės revoliucijos įsitraukdamas į startuolių ekosistemą, kuri skatina naujovių kūrimą ir ryšių tarp verslo ir technologijų plėtrą.
+          </p>
+        </div>
+      </div>
+      <div>
+        <input type="radio" name="duk_accordion" id="section3" class="accordion__input">
+        <label for="section3" class="accordion__label">3. Kokių iššūkių ir galimybių lauki ateityje dirbdamas su technologijomis?</label>
+        <div class="accordion__content">
+          <p>
+            Laukiu iššūkių, susijusių su sparčiu technologijų pokyčiu, kuris reikalauja nuolatinio mokymosi ir prisitaikymo. Taip pat matau daug galimybių kurti inovacijas ir sprendimus, kurie pagerina žmonių gyvenimą.
+          </p>
+        </div>
+      </div>
+      <div>
+        <input type="radio" name="duk_accordion" id="section4" class="accordion__input">
+        <label for="section4" class="accordion__label">4. Kokia yra tavo vizija tobulos ateities, kurioje technologijos padeda žmonėms įgyvendinti savo potencialą?</label>
+        <div class="accordion__content">
+          <p>
+            Mano vizija tobulos ateities yra tai, kur technologijos tampa nepakeičiamu įrankiu žmonėms įgyvendinti savo kūrybiškumą, optimizuoti procesus ir kurti darnią visuomenę.
+          </p>
+        </div>
+      </div>
+      <div>
+        <input type="radio" name="duk_accordion" id="section5" class="accordion__input">
+        <label for="section5" class="accordion__label">5. Kokias konkrečias technologijas norėtum išmokti ar plėtoti ateityje?</label>
+        <div class="accordion__content">
+          <p>
+            Ateityje norėčiau išmokti dirbti su dirbtiniu intelektu, dideliu duomenų apdorojimu, kad galėčiau kurti inovatyvius projektus šiose srityse.
+          </p>
+        </div>
+      </div>
+      <div>
+        <input type="radio" name="duk_accordion" id="section6" class="accordion__input">
+        <label for="section6" class="accordion__label">6. Kokie yra tavo planai skatinti technologinį raštingumą visuomenėje?</label>
+        <div class="accordion__content">
+          <p>
+            Mano planai skatinti technologinį raštingumą visuomenėje apima organizuoti edukacines programas, dalintis žiniomis ir patirtimi per socialinius tinklus, bei palaikyti iniciatyvas, skatinančias technologijų supratimą ir naudojimą.
+          </p>
+        </div>
+      </div>
+      <div>
+        <input type="radio" name="duk_accordion" id="section7" class="accordion__input">
+        <label for="section7" class="accordion__label">7. Kokius iššūkius ir pasekmes matai technologijų plėtrai ir žmonių gyvenimui ateityje?</label>
+        <div class="accordion__content">
+          <p>
+            Technologijų plėtra gali atnešti daug naudos, tačiau tai taip pat kelia iššūkių, susijusių su privatumo saugumu, etikos klausimais.
+          </p>
+        </div>
+      </div>
+      <div>
+        <input type="radio" name="duk_accordion" id="section8" class="accordion__input">
+        <label for="section8" class="accordion__label">8. Kokius aspektus turėtume svarstyti ir įtraukti į diskusijas apie technologijų įtaką mūsų visuomenei?</label>
+        <div class="accordion__content">
+          <p>
+            Diskusijose apie technologijų įtaką mūsų visuomenei turėtume svarstyti etinius aspektus, žmonių apsaugą nuo technologinės priklausomybės, teisinį reguliavimą.
+          </p>
+        </div>
+      </div>
+      <div>
+        <input type="radio" name="duk_accordion" id="section9" class="accordion__input">
+        <label for="section9" class="accordion__label">9. Kaip technologijos gali pakeisti darbo rinką ir mūsų profesines veiklos sritis ateityje?</label>
+        <div class="accordion__content">
+          <p>
+            Technologijos gali pakeisti darbo rinką ir profesines veiklos sritis ateityje, didindamos automatizaciją ir dirbtinio intelekto naudojimą. Tai reikalauja nuolatinio mokymosi ir adaptacijos, tačiau taip pat gali sukurti naujas galimybes ir darbo vietas.
+          </p>
+        </div>
+      </div>
+      <div>
+        <input type="radio" name="duk_accordion" id="section10" class="accordion__input">
+        <label for="section10" class="accordion__label">10. Kokie yra tavo planai ir įsipareigojimai, kad pasiektum savo ateities tikslus su technologijomis?</label>
+        <div class="accordion__content">
+          <p>
+            Mano planai ir įsipareigojimai siekiant savo ateities tikslų su technologijomis apima nuolatinį mokymąsi, atvirumo naujovėms ir bendradarbiavimui su kitais specialistais. Taip pat siekiu būti atsakingas ir etiškas technologijų naudotojas bei plėtotojas, kad teigiamai įtakočiau visuomenę.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="kontaktai-content-wrapper">
+      <div class="kontaktai-header-header">
+        <div class=" hiddenRight">
+          Kontaktai
+        </div>
+      </div>
+
+      <div class="kontaktai-upper-section">
+        <div class="kontaktai-content-box">
+          <div class="kontaktai-content-box-img-container">
+            <img class="kontaktai-content-box-img" src="images/content-box-img1.svg" alt="">
+          </div>
+          <div class="kontaktai-content-box-title">
+            El. Paštas
+          </div>
+          <div class="kontaktai-content-box-description">
+            <p>
+              Pirmadienis &mdash; Penktadienis
+            </p>
+            <p>
+              Numatomas atsakymo laikas: 72 h.
+            </p>
+          </div>
+          <div class="kontaktai-content-box-btn">
+            Siųsti el. laišką
+            <i class="fa-solid fa-arrow-right-long kontaktai-content-box-icon"></i>
+          </div>
+        </div>
+        <div class="kontaktai-content-box">
+          <div class="kontaktai-content-box-img-container">
+            <img class="kontaktai-content-box-img" src="images/content-box-img2.svg" alt="">
+          </div>
+          <div class="kontaktai-content-box-title">
+            Gyvas Pokalbis
+          </div>
+          <div class="kontaktai-content-box-description">
+            <p>
+              Darbo dienomis: 10:00 - 13:00
+            </p>
+            <p>
+              Savaitgaliais: 10:00 - 11:00
+            </p>
+          </div>
+          <div class="kontaktai-content-box-btn">
+            Pradėti pokalbį
+            <i class="fa-solid fa-arrow-right-long kontaktai-content-box-icon"></i>
+          </div>
+        </div>
+        <div class="kontaktai-content-box">
+          <div class="kontaktai-content-box-img-container">
+            <img class="kontaktai-content-box-img" src="images/content-box-img3.svg" alt="">
+          </div>
+          <div class="kontaktai-content-box-title">
+            Bendruomenės Forumas
+          </div>
+          <div class="kontaktai-content-box-description">
+            <p>
+              Pirmadienis &mdash; Penktadienis
+            </p>
+            <p>
+              Numatomas atsakymo laikas: 48 h.
+            </p>
+          </div>
+          <div class="kontaktai-content-box-btn">
+            Prisijungti
+            <i class="fa-solid fa-arrow-right-long kontaktai-content-box-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="kontaktai-bottom-section">
+        <div class="kontaktai-left-section hidden">
+          <div class="kontaktai-left-section-header">
+            <p class="kontaktai-noncoloured-text">
+              Turite darbo pasiūlymų?
+            </p>
+            <p class="kontaktai-coloured-text">
+              Susisiekite!
+            </p> 
+          </div>
+          <div class="kontaktai-info-info-container">
+            <div class="kontaktai-icon-container">
+              <i class="fa-regular fa-clock kontaktai-icon-icon"></i>
+            </div>
+            <p class="kontaktai-description-description">
+              Pirmadienis &mdash; Penktadienis 09:00 - 17:00
+            </p>
+          </div>
+          <div class="kontaktai-info-info-container">
+            <div class="kontaktai-icon-container">
+              <i class="fa-regular fa-envelope kontaktai-icon-icon"></i>
+            </div>
+            <p class="kontaktai-description-description">
+              melynas@dangus.com
+            </p>
+          </div>
+          <div class="kontaktai-info-info-container">
+            <div class="kontaktai-icon-container">
+              <i class="fa-solid fa-mobile-screen-button kontaktai-icon-icon"></i>
+            </div>
+            <p class="kontaktai-description-description">
+              +370 123 45 789
+            </p>
+          </div>
+          <div class="kontaktai-info-info-container">
+            <div class="kontaktai-icon-container">
+              <i class="fa-solid fa-location-dot kontaktai-icon-icon"></i>
+            </div>
+            <p class="kontaktai-description-description">
+              9119 Vienaragio Urvo alėja, Bahamai 81937
+            </p>
+          </div>
+        </div>
+        <div class="kontaktai-right-section hiddenRight">
+          <div class="right-section-field">
+            <p class="right-section-p">
+              Vardas
+            </p>
+            <input class="right-section-input" type="text" placeholder="Įveskite savo vardą">
+          </div>
+          <div class="right-section-field">
+            <p class="right-section-p">
+              Pavardė
+            </p>
+            <input class="right-section-input" type="text" placeholder="Įveskite savo pavardę">
+          </div>
+          <div class="right-section-field">
+            <p class="right-section-p">
+              El. paštas
+            </p>
+            <input class="right-section-input" type="text" placeholder="Įveskite savo el. paštą">
+          </div>
+          <div class="right-section-field">
+            <p class="right-section-p">
+              Žinutė
+            </p>
+            <textarea class="right-section-input-message" placeholder="Parašykite savo žinutę" name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="send-message-btn">
+            Siųsti žinutę
+            <i class="fa-regular fa-envelope btn-icon-icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-left-section">
+      <div class="icon-header">Mane rasti galite čia:</div>
+      <div class="icon-container">
+        <div class="footer-icon">
+          <i class="fa-brands fa-square-facebook"></i>
+        </div>
+        <div class="footer-icon">
+          <i class="fa-brands fa-square-github"></i>
+        </div>
+        <div class="footer-icon">
+          <i class="fa-brands fa-square-instagram"></i>
+        </div>
+        <div class="footer-icon">
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+      <div class="more-content-container">
+        <div class="item-item-container">
+          <div class="symbol-container">&#x2022;</div>
+          <a class="a-left"> Privatumo politika</a>
+        </div>
+        <div class="item-item-container">
+          <div class="symbol-container">&#x2022;</div>
+          <a class="a-right"> Slapukai</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-right-section">
+      <div class="newsletter-title">Prenumeruokite naujienlaiškį</div>
+      <div class="another-container">
+        <input placeholder="Jūsų el. paštas" class="email-input" type="text">
+        <div class="subscribe-btn">Prenumeruoti</div>
+      </div>
+      <div class="newsletter-description">Gaukite naujausias aktualijas apie informacines technologijas.</div>
+    </div>
+  </footer>
+  
+</body>
+</html>
